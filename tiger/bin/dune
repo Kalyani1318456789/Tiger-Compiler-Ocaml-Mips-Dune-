@@ -1,0 +1,9 @@
+(executable
+ (public_name tc)
+ (name main)
+ (libraries tiger))
+
+(executable
+ (name blocks)
+ (public_name blocks)
+ (libraries tiger))

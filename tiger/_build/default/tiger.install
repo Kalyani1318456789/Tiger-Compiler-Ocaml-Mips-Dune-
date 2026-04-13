@@ -1,0 +1,65 @@
+lib: [
+  "_build/install/default/lib/tiger/META"
+  "_build/install/default/lib/tiger/backend/mips/inst.ml" {"backend/mips/inst.ml"}
+  "_build/install/default/lib/tiger/backend/mips/mips.ml" {"backend/mips/mips.ml"}
+  "_build/install/default/lib/tiger/backend/mips/reg.ml" {"backend/mips/reg.ml"}
+  "_build/install/default/lib/tiger/dune-package"
+  "_build/install/default/lib/tiger/lexer.ml"
+  "_build/install/default/lib/tiger/opam"
+  "_build/install/default/lib/tiger/parser.ml"
+  "_build/install/default/lib/tiger/parser.mli"
+  "_build/install/default/lib/tiger/tiger.a"
+  "_build/install/default/lib/tiger/tiger.cma"
+  "_build/install/default/lib/tiger/tiger.cmi"
+  "_build/install/default/lib/tiger/tiger.cmt"
+  "_build/install/default/lib/tiger/tiger.cmx"
+  "_build/install/default/lib/tiger/tiger.cmxa"
+  "_build/install/default/lib/tiger/tiger.ml"
+  "_build/install/default/lib/tiger/tiger_0/ast.ml" {"tiger_0/ast.ml"}
+  "_build/install/default/lib/tiger/tiger_0/blocks.ml" {"tiger_0/blocks.ml"}
+  "_build/install/default/lib/tiger/tiger_0/codegen.ml" {"tiger_0/codegen.ml"}
+  "_build/install/default/lib/tiger/tiger_0/ir.ml" {"tiger_0/ir.ml"}
+  "_build/install/default/lib/tiger/tiger_0/temp.ml" {"tiger_0/temp.ml"}
+  "_build/install/default/lib/tiger/tiger_0/translate.ml" {"tiger_0/translate.ml"}
+  "_build/install/default/lib/tiger/tiger__Ast.cmi"
+  "_build/install/default/lib/tiger/tiger__Ast.cmt"
+  "_build/install/default/lib/tiger/tiger__Ast.cmx"
+  "_build/install/default/lib/tiger/tiger__Blocks.cmi"
+  "_build/install/default/lib/tiger/tiger__Blocks.cmt"
+  "_build/install/default/lib/tiger/tiger__Blocks.cmx"
+  "_build/install/default/lib/tiger/tiger__Codegen.cmi"
+  "_build/install/default/lib/tiger/tiger__Codegen.cmt"
+  "_build/install/default/lib/tiger/tiger__Codegen.cmx"
+  "_build/install/default/lib/tiger/tiger__Inst.cmi"
+  "_build/install/default/lib/tiger/tiger__Inst.cmt"
+  "_build/install/default/lib/tiger/tiger__Inst.cmx"
+  "_build/install/default/lib/tiger/tiger__Ir.cmi"
+  "_build/install/default/lib/tiger/tiger__Ir.cmt"
+  "_build/install/default/lib/tiger/tiger__Ir.cmx"
+  "_build/install/default/lib/tiger/tiger__Lexer.cmi"
+  "_build/install/default/lib/tiger/tiger__Lexer.cmt"
+  "_build/install/default/lib/tiger/tiger__Lexer.cmx"
+  "_build/install/default/lib/tiger/tiger__Mips.cmi"
+  "_build/install/default/lib/tiger/tiger__Mips.cmt"
+  "_build/install/default/lib/tiger/tiger__Mips.cmx"
+  "_build/install/default/lib/tiger/tiger__Parser.cmi"
+  "_build/install/default/lib/tiger/tiger__Parser.cmt"
+  "_build/install/default/lib/tiger/tiger__Parser.cmti"
+  "_build/install/default/lib/tiger/tiger__Parser.cmx"
+  "_build/install/default/lib/tiger/tiger__Reg.cmi"
+  "_build/install/default/lib/tiger/tiger__Reg.cmt"
+  "_build/install/default/lib/tiger/tiger__Reg.cmx"
+  "_build/install/default/lib/tiger/tiger__Temp.cmi"
+  "_build/install/default/lib/tiger/tiger__Temp.cmt"
+  "_build/install/default/lib/tiger/tiger__Temp.cmx"
+  "_build/install/default/lib/tiger/tiger__Translate.cmi"
+  "_build/install/default/lib/tiger/tiger__Translate.cmt"
+  "_build/install/default/lib/tiger/tiger__Translate.cmx"
+]
+libexec: [
+  "_build/install/default/lib/tiger/tiger.cmxs"
+]
+bin: [
+  "_build/install/default/bin/blocks"
+  "_build/install/default/bin/tc"
+]

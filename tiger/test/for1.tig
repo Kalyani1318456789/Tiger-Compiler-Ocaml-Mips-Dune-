@@ -1,0 +1,9 @@
+y := 2;
+x := 40 + y;
+print x + y;
+
+for x = 0 to 100 do
+  print x;
+done;
+
+print x;

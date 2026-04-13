@@ -1,0 +1,8 @@
+(library
+ (name tiger)
+ (public_name tiger))
+
+(include_subdirs unqualified)
+
+(menhir (modules parser))
+(ocamllex lexer)

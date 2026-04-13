@@ -1,0 +1,10 @@
+x :=10;
+y :=5;
+
+print x+y;
+
+for i = 1 to 3 do
+   print x + i;
+done;
+
+print y*2;

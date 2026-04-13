@@ -1,0 +1,6 @@
+description = ""
+requires = ""
+archive(byte) = "tiger.cma"
+archive(native) = "tiger.cmxa"
+plugin(byte) = "tiger.cma"
+plugin(native) = "tiger.cmxs"

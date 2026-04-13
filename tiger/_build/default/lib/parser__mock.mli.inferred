@@ -1,0 +1,24 @@
+type token =
+    TO
+  | SEMI
+  | RPAREN
+  | PRINT
+  | PLUS
+  | MUL
+  | MINUS
+  | LPAREN
+  | INT of int
+  | ID of string
+  | FOR
+  | EQUAL
+  | EOF
+  | DONE
+  | DO
+  | DIV
+  | ASSIGN
+val menhir_begin_marker : int
+val xv_stmt_seq : Ast.stmt list
+val xv_stmt : Ast.stmt
+val xv_program : Ast.stmt list
+val xv_expr : Ast.expr
+val menhir_end_marker : int

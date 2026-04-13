@@ -1,0 +1,126 @@
+(lang dune 3.22)
+(name tiger)
+(sections (lib .) (libexec .) (bin ../../bin))
+(files
+ (lib
+  (META
+   backend/mips/inst.ml
+   backend/mips/mips.ml
+   backend/mips/reg.ml
+   dune-package
+   lexer.ml
+   opam
+   parser.ml
+   parser.mli
+   tiger.a
+   tiger.cma
+   tiger.cmi
+   tiger.cmt
+   tiger.cmx
+   tiger.cmxa
+   tiger.ml
+   tiger_0/ast.ml
+   tiger_0/blocks.ml
+   tiger_0/codegen.ml
+   tiger_0/ir.ml
+   tiger_0/temp.ml
+   tiger_0/translate.ml
+   tiger__Ast.cmi
+   tiger__Ast.cmt
+   tiger__Ast.cmx
+   tiger__Blocks.cmi
+   tiger__Blocks.cmt
+   tiger__Blocks.cmx
+   tiger__Codegen.cmi
+   tiger__Codegen.cmt
+   tiger__Codegen.cmx
+   tiger__Inst.cmi
+   tiger__Inst.cmt
+   tiger__Inst.cmx
+   tiger__Ir.cmi
+   tiger__Ir.cmt
+   tiger__Ir.cmx
+   tiger__Lexer.cmi
+   tiger__Lexer.cmt
+   tiger__Lexer.cmx
+   tiger__Mips.cmi
+   tiger__Mips.cmt
+   tiger__Mips.cmx
+   tiger__Parser.cmi
+   tiger__Parser.cmt
+   tiger__Parser.cmti
+   tiger__Parser.cmx
+   tiger__Reg.cmi
+   tiger__Reg.cmt
+   tiger__Reg.cmx
+   tiger__Temp.cmi
+   tiger__Temp.cmt
+   tiger__Temp.cmx
+   tiger__Translate.cmi
+   tiger__Translate.cmt
+   tiger__Translate.cmx))
+ (libexec (tiger.cmxs))
+ (bin (blocks tc)))
+(library
+ (name tiger)
+ (kind normal)
+ (archives (byte tiger.cma) (native tiger.cmxa))
+ (plugins (byte tiger.cma) (native tiger.cmxs))
+ (native_archives tiger.a)
+ (main_module_name Tiger)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name tiger)
+     (visibility public)
+     (kind alias)
+     (source (path Tiger) (impl (path tiger.ml-gen))))
+    (name Tiger)
+    (modules
+     (module
+      (obj_name tiger__Ast)
+      (visibility public)
+      (source (path Ast) (impl (path tiger_0/ast.ml))))
+     (module
+      (obj_name tiger__Blocks)
+      (visibility public)
+      (source (path Blocks) (impl (path tiger_0/blocks.ml))))
+     (module
+      (obj_name tiger__Codegen)
+      (visibility public)
+      (source (path Codegen) (impl (path tiger_0/codegen.ml))))
+     (module
+      (obj_name tiger__Inst)
+      (visibility public)
+      (source (path Inst) (impl (path backend/mips/inst.ml))))
+     (module
+      (obj_name tiger__Ir)
+      (visibility public)
+      (source (path Ir) (impl (path tiger_0/ir.ml))))
+     (module
+      (obj_name tiger__Lexer)
+      (visibility public)
+      (source (path Lexer) (impl (path lexer.ml))))
+     (module
+      (obj_name tiger__Mips)
+      (visibility public)
+      (source (path Mips) (impl (path backend/mips/mips.ml))))
+     (module
+      (obj_name tiger__Parser)
+      (visibility public)
+      (source (path Parser) (intf (path parser.mli)) (impl (path parser.ml))))
+     (module
+      (obj_name tiger__Reg)
+      (visibility public)
+      (source (path Reg) (impl (path backend/mips/reg.ml))))
+     (module
+      (obj_name tiger__Temp)
+      (visibility public)
+      (source (path Temp) (impl (path tiger_0/temp.ml))))
+     (module
+      (obj_name tiger__Translate)
+      (visibility public)
+      (source (path Translate) (impl (path tiger_0/translate.ml))))))
+   (wrapped true))))
